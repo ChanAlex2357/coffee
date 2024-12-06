@@ -1,10 +1,9 @@
 // Imporation des modules react
 import React from "react";
-import { View, Text, Button, StyleSheet, Alert } from 'react-native';
-import CoffeeButton from "../components/atoms/CoffeeButton";
+import { View, StyleSheet, } from 'react-native';
 
 const HomeScreen = function() {
-    return  <View style={{flex:1}}>
+    return  <View style={styles.screen_container}> 
                 <View style={styles.head_view}>
 
                 </View>
@@ -15,6 +14,10 @@ const HomeScreen = function() {
 }
 
 const styles = StyleSheet.create({
+    screen_container: {
+        flex: 1,
+        backgroundColor: '#fff'
+    },
     head_view : {
         flex : 1,
         backgroundColor : '#020202',
@@ -22,7 +25,7 @@ const styles = StyleSheet.create({
     },
     body_view : {
         flex:2,
-        backgroundColor : "#ffffff",
+        backgroundColor : "#bbbbbb",
     }
 });
 // Exporation du composant
