@@ -1,11 +1,12 @@
 // Imporation des modules react
 import React from "react";
 import { View, StyleSheet, } from 'react-native';
+import BaseInfo from "../components/organics/BaseInfo";
 
 const HomeScreen = function() {
     return  <View style={styles.screen_container}> 
                 <View style={styles.head_view}>
-
+                    <BaseInfo></BaseInfo>
                 </View>
                 <View style={styles.body_view}>
                     
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
     head_view : {
         flex : 1,
         backgroundColor : '#020202',
-        padding:6,
+        padding:18,
     },
     body_view : {
         flex:2,
